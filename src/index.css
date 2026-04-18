@@ -1,0 +1,18 @@
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Barlow:wght@300;400;500;600;700&display=swap');
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: Barlow, sans-serif; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.7; transform:scale(1.08); } }
+        @keyframes bounce { 0%,100% { transform:translateY(0); } 50% { transform:translateY(6px); } }
+        @media (max-width: 768px) {
+          .desktop-nav { display: none !important; }
+          .mobile-toggle { display: flex !important; }
+        }
+        @media (max-width: 900px) {
+          section > div > div[style*="grid-template-columns: 1fr 1fr"],
+          section > div > div[style*="grid-template-columns: 2fr 1fr 1fr 1fr"],
+          section > div > div[style*="grid-template-columns: 1fr 1.4fr"] {
+            grid-template-columns: 1fr !important;
+          }
+        }
