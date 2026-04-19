@@ -25,7 +25,7 @@ export function AnimCounter({ target, suffix = "", duration = 2000 }) {
 export default function About() {
   const [ref, visible] = useReveal();
   return (
-    <section id="about" style={{ padding: "110px 5vw", background: "#f8f7f4", position: "relative", overflow: "hidden" }}>
+    <section id="about" style={{ padding: "80px 5vw", background: "#f8f7f4", position: "relative", overflow: "hidden" }}>
       <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: "linear-gradient(135deg, rgba(243,156,18,0.04), transparent)", pointerEvents: "none" }} />
       <div ref={ref} style={{ maxWidth: 1280, margin: "0 auto", display: "grid", width: "100%", overflow: "hidden", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center", opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(40px)", transition: "all 0.8s ease" }}>
         {/* Left visual */}
