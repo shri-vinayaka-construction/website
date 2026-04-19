@@ -60,7 +60,7 @@ export default function About() {
           <p style={{ color: "#555", fontSize: 16, lineHeight: 1.85, marginBottom: 36, fontFamily: "Barlow, sans-serif" }}>
             We believe great construction begins at the ground level — precise planning, honest timelines, and a workforce that treats every project like it's their own home being built.
           </p>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 20 }}>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: window.innerWidth < 900 ? 40 : 80 }}>
             {[["200+", "Projects Completed"], ["50+", "Industrial Clients"], ["15+", "Years Experience"], ["100%", "Client Satisfaction"]].map(([n, l], i) => (
               <div key={i} style={{ background: "#fff", borderRadius: 10, padding: "20px", border: "1px solid rgba(26,26,46,0.08)", boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}>
                 <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 900, color: "#f39c12" }}><AnimCounter target={parseInt(n)} suffix={n.includes("+") ? "+" : "%"} /></div>
