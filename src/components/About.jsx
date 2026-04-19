@@ -42,7 +42,7 @@ export default function About() {
             ))}
           </div>
           {/* Floating badge */}
-          <div style={{ position: "absolute", bottom: -20, left: -20, background: "linear-gradient(135deg, #f39c12, #e67e22)", borderRadius: 12, padding: "20px 24px", boxShadow: "0 12px 40px rgba(243,156,18,0.4)" }}>
+          <div style={{ position: "absolute", bottom: 10, left: 10, background: "linear-gradient(135deg, #f39c12, #e67e22)", borderRadius: 12, padding: "20px 24px", boxShadow: "0 12px 40px rgba(243,156,18,0.4)" }}>
             <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: 32, fontWeight: 900, color: "#fff", lineHeight: 1 }}>15+</div>
             <div style={{ color: "rgba(255,255,255,0.85)", fontSize: 12, letterSpacing: 1.5, textTransform: "uppercase", fontFamily: "Barlow, sans-serif" }}>Years of Trust</div>
           </div>
