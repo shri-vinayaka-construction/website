@@ -15,7 +15,7 @@ export default function Header() {
       <div style={{ maxWidth: 1280, margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
         {/* Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{ width: 42, height: 42, background: "linear-gradient(135deg, #f39c12, #e67e22)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: 20, color: "#fff", letterSpacing: -1, flexShrink: 0 }}>SV</div>
+          <img src="/images/logo.png" alt="Shri Vinayaka Construction Logo" style={{ height: 42 }} />
           <div>
             <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 15, color: "#fff", lineHeight: 1.1, letterSpacing: 0.3 }}>SHRI VINAYAKA</div>
             <div style={{ fontSize: 9.5, color: "#f39c12", letterSpacing: 2.5, textTransform: "uppercase", fontWeight: 600 }}>Construction & Interiors</div>
