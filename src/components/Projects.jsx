@@ -2,12 +2,12 @@ import { useState } from "react";
 import useReveal from "../hooks/useReveal";
 
 const PROJECTS = [
-  { cat: "Industrial", title: "Peenya Precision Manufacturing Plant", sqft: "28,000 sq ft", year: "2023", bg: "linear-gradient(135deg, #1a1a2e, #2d3561)" },
-  { cat: "Residential", title: "Luxury Villa — Rajajinagar", sqft: "4,200 sq ft", year: "2023", bg: "linear-gradient(135deg, #2c3e50, #34495e)" },
-  { cat: "Interiors", title: "Premium Office Interior — Yeshwanthpur", sqft: "6,500 sq ft", year: "2024", bg: "linear-gradient(135deg, #1a472a, #2d6a4f)" },
-  { cat: "Industrial", title: "Cold Storage Facility — Peenya II Stage", sqft: "14,000 sq ft", year: "2022", bg: "linear-gradient(135deg, #3d0000, #800000)" },
-  { cat: "Residential", title: "G+3 Apartment Block — Tumkur Road", sqft: "9,800 sq ft", year: "2024", bg: "linear-gradient(135deg, #2c2c54, #474787)" },
-  { cat: "Interiors", title: "POP Medallion Showroom — M.G. Road", sqft: "3,100 sq ft", year: "2023", bg: "linear-gradient(135deg, #0d0d0d, #1a1a2e)" },
+  { cat: "Industrial", title: "Peenya Precision Manufacturing Plant", sqft: "28,000 sq ft", year: "2023", bg: "linear-gradient(135deg, #1a1a2e, #2d3561)", img: "/images/projects/p1.jpg" },
+  { cat: "Residential", title: "Luxury Villa — Rajajinagar", sqft: "4,200 sq ft", year: "2023", bg: "linear-gradient(135deg, #2c3e50, #34495e)", img: "/images/projects/p2.jpg" },
+  { cat: "Interiors", title: "Premium Office Interior — Yeshwanthpur", sqft: "6,500 sq ft", year: "2024", bg: "linear-gradient(135deg, #1a472a, #2d6a4f)", img: "/images/projects/p3.jpg" },
+  { cat: "Industrial", title: "Cold Storage Facility — Peenya II Stage", sqft: "14,000 sq ft", year: "2022", bg: "linear-gradient(135deg, #3d0000, #800000)", img: "/images/projects/p4.jpg" },
+  { cat: "Residential", title: "G+3 Apartment Block — Tumkur Road", sqft: "9,800 sq ft", year: "2024", bg: "linear-gradient(135deg, #2c2c54, #474787)", img: "/images/projects/p5.jpg" },
+  { cat: "Interiors", title: "POP Medallion Showroom — M.G. Road", sqft: "3,100 sq ft", year: "2023", bg: "linear-gradient(135deg, #0d0d0d, #1a1a2e)", img: "/images/projects/p6.jpg" },
 ];
 
 export default function Projects() {
@@ -35,6 +35,7 @@ export default function Projects() {
               onMouseLeave={e => { e.currentTarget.style.transform = "none"; e.currentTarget.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)"; }}>
               {/* Image placeholder with gradient */}
               <div style={{ height: 200, background: p.bg, position: "relative", display: "flex", alignItems: "flex-end", padding: 0 }}>
+                <img src={p.img} alt={p.title} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.85 }} />
                 <div style={{ position: "absolute", inset: 0, backgroundImage: `repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 20px), repeating-linear-gradient(-45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 1px, transparent 1px, transparent 20px)` }} />
                 <div style={{ position: "absolute", top: 16, left: 16, background: "rgba(243,156,18,0.9)", borderRadius: 5, padding: "4px 12px" }}>
                   <span style={{ color: "#fff", fontSize: 11, fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase", fontFamily: "Barlow, sans-serif" }}>{p.cat}</span>
