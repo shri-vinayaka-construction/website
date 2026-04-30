@@ -9,11 +9,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-              <div style={{ width: 44, height: 44, background: "linear-gradient(135deg, #f39c12, #e67e22)", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: 20, color: "#fff" }}>SV</div>
-              <div>
+              <img src="/images/logo.png" alt="Shri Vinayaka Construction Logo" style={{ height: 44 }} />
                 <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 800, fontSize: 15, color: "#fff", lineHeight: 1.1 }}>SHRI VINAYAKA</div>
                 <div style={{ fontSize: 9.5, color: "#f39c12", letterSpacing: 2.5, textTransform: "uppercase" }}>Construction & Interiors</div>
-              </div>
+              
             </div>
             <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 14, lineHeight: 1.8, marginBottom: 24, fontFamily: "Barlow, sans-serif", maxWidth: 280 }}>
               Peenya's trusted A-Z construction partner since 2009. Industrial strength, interior elegance.
@@ -56,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
+Set Se
       {/* Local SEO JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
